@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PetFriend">
-
+        <activity
+            android:name=".ListaVacunas"
+            android:exported="false" />
         <activity
             android:name=".AgregarMascota"
             android:parentActivityName=".ListaMascotas">
             <meta-data
                 android:name="android.support.PARENT_ARTIVITY"
-                android:value=".ListaMascotas"/>
+                android:value=".ListaMascotas" />
         </activity>
         <activity
             android:name=".ListaMascotas"
@@ -29,18 +31,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InfMascotas"
+        <activity
+            android:name=".InfMascotas"
             android:parentActivityName=".ListaMascotas">
             <meta-data
                 android:name="android.support.PARENT_ARTIVITY"
-                android:value=".ListaMascotas"/>
+                android:value=".ListaMascotas" />
         </activity>
-
-        <activity android:name=".EditarActivity"
+        <activity
+            android:name=".EditarActivity"
             android:parentActivityName=".ListaMascotas">
             <meta-data
                 android:name="android.support.PARENT_ARTIVITY"
-                android:value=".ListaMascotas"/>
+                android:value=".ListaMascotas" />
         </activity>
     </application>
 
