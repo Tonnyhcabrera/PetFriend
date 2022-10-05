@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void CambiarVentana3(View view) {
-        Intent CambiarVentana3 = new Intent (this, ListaMascotas.class);
+    public void CambiarpantallaPrincipal(View view) {
+        Intent CambiarVentana3 = new Intent (this, PantallaPrincipal.class);
         startActivity(CambiarVentana3);
         finish();
     }

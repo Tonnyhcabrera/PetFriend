@@ -8,6 +8,14 @@
     android:orientation="vertical"
     tools:context=".ListaVacunas">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Vacunas"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listaVacunas"
         android:layout_width="match_parent"
