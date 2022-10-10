@@ -26,6 +26,8 @@ public class ListaMascotas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_mascotas);
 
+
+
         listaMascotas = findViewById(R.id.listaMascotas);
 
          listaMascotas.setLayoutManager(new LinearLayoutManager(this));
@@ -40,11 +42,6 @@ public class ListaMascotas extends AppCompatActivity {
     }
 
 
-    public void CambiarVentana3(View view) {
-        Intent CambiarVentana3 = new Intent (this, AgregarMascota.class);
-        startActivity(CambiarVentana3);
-        finish();
-    }
 
     public  boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();

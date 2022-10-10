@@ -9,7 +9,7 @@
     tools:context=".AgregarMascota">
 
     <ImageView
-        android:id="@+id/ima_perfil"
+        android:id="@+id/ima_vacuna"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/ico_pet_patita" />
 
     <EditText
-        android:id="@+id/nombre_mascota"
+        android:id="@+id/nombre_vacuna"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -29,10 +29,10 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ima_perfil" />
+        app:layout_constraintTop_toBottomOf="@+id/ima_vacuna" />
 
     <EditText
-        android:id="@+id/raza"
+        android:id="@+id/fecha_vacuna"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -42,10 +42,10 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_mascota" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre_vacuna" />
 
     <EditText
-        android:id="@+id/peso_mascota"
+        android:id="@+id/prox_vacuna"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -56,7 +56,7 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/raza" />
+        app:layout_constraintTop_toBottomOf="@+id/fecha_vacuna" />
 
     <EditText
         android:id="@+id/edad_mascota"
@@ -70,7 +70,7 @@
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/peso_mascota" />
+        app:layout_constraintTop_toBottomOf="@+id/prox_vacuna" />
 
 
     <ImageButton

@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/nombre_mascota"
+        android:id="@+id/nombre_vacuna"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -22,19 +22,19 @@
 />
 
     <EditText
-        android:id="@+id/raza"
+        android:id="@+id/fecha_vacuna"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:minHeight="48dp"
         android:textAlignment="center"
         android:hint="Modificar Raza"
-        app:layout_constraintEnd_toEndOf="@+id/nombre_mascota"
-        app:layout_constraintStart_toStartOf="@+id/nombre_mascota"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_mascota"/>
+        app:layout_constraintEnd_toEndOf="@+id/nombre_vacuna"
+        app:layout_constraintStart_toStartOf="@+id/nombre_vacuna"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_vacuna"/>
 
     <EditText
-        android:id="@+id/peso_mascota"
+        android:id="@+id/prox_vacuna"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -42,9 +42,9 @@
         android:minHeight="48dp"
         android:textAlignment="center"
         android:hint="Modificar Peso"
-        app:layout_constraintEnd_toEndOf="@+id/raza"
-        app:layout_constraintStart_toStartOf="@+id/raza"
-        app:layout_constraintTop_toBottomOf="@+id/raza" />
+        app:layout_constraintEnd_toEndOf="@+id/fecha_vacuna"
+        app:layout_constraintStart_toStartOf="@+id/fecha_vacuna"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_vacuna" />
 
     <EditText
         android:id="@+id/edad_mascota"
@@ -55,9 +55,9 @@
         android:textAlignment="center"
         android:hint="Modificar Edad"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/peso_mascota"
-        app:layout_constraintStart_toStartOf="@+id/peso_mascota"
-        app:layout_constraintTop_toBottomOf="@+id/peso_mascota" />
+        app:layout_constraintEnd_toEndOf="@+id/prox_vacuna"
+        app:layout_constraintStart_toStartOf="@+id/prox_vacuna"
+        app:layout_constraintTop_toBottomOf="@+id/prox_vacuna" />
 
     <Button
         android:id="@+id/btnGuardar"
@@ -95,5 +95,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEliminar" />
+
+    <ImageView
+        android:id="@+id/ico_vacuna_list"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:onClick="CambiarPantallaListaVacunas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edad_mascota"
+        app:srcCompat="@drawable/ico_vacuna" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

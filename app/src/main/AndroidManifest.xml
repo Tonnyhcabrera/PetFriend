@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PetFriend">
         <activity
+            android:name=".AgregarVacuna"
+            android:exported="false" />
+        <activity
             android:name=".PantallaPrincipal"
             android:exported="false" />
         <activity

@@ -2,7 +2,6 @@ package com.empresaurios.petfriend;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,10 +25,10 @@ public class EditarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inf_mascotas);
 
-        txtNombre = findViewById(R.id.nombre_mascota);
-        txtRaza = findViewById(R.id.raza);
+        txtNombre = findViewById(R.id.nombre_vacuna);
+        txtRaza = findViewById(R.id.fecha_vacuna);
         txtEdad = findViewById(R.id.edad_mascota);
-        txtPeso = findViewById(R.id.peso_mascota);
+        txtPeso = findViewById(R.id.prox_vacuna);
 
         btnGuardar = findViewById(R.id.btnGuardar);
         btnModificar = findViewById(R.id.btnModificar);

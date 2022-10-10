@@ -4,9 +4,11 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
+import com.empresaurios.petfriend.AgregarMascota;
 import com.empresaurios.petfriend.entidades.Mascotas;
 
 import java.util.ArrayList;
@@ -21,20 +23,25 @@ public class DbMascotas extends DbHelper {
         this.context = context;
     }
 
-    public long insertarContacto(String nombre, String raza, String peso,String edad){
+    public long insertarMascota(String nombre, String raza, String peso,String edad){
+
 
         long id = 0;
         try{
             DbHelper dbHelper = new DbHelper(context);
             SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-            ContentValues values = new ContentValues();
-            values.put("nombre", nombre);
-            values.put("raza", raza);
-            values.put("peso", peso);
-            values.put("edad", edad);
 
-            id = db.insert(TABLE_DATABASE, null,values);
+
+                System.out.println("SI pasa el if de validacion de campos vacion ");
+                ContentValues values = new ContentValues();
+                values.put("nombre", nombre);
+                values.put("raza", raza);
+                values.put("peso", peso);
+                values.put("edad", edad);
+
+                id = db.insert(TABLE_DATABASE, null,values);
+
         }catch(Exception ex){
             ex.toString();
         }

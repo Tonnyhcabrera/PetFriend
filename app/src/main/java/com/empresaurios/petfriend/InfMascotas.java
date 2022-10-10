@@ -19,6 +19,8 @@ public class InfMascotas extends AppCompatActivity {
     EditText txtNombre, txtRaza, txtPeso, txtEdad;
     Button btnGuardar, btnModificar, btnEliminar;
     Mascotas mascotas;
+
+
     int id = 0;
 
     @Override
@@ -26,10 +28,12 @@ public class InfMascotas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inf_mascotas);
 
-        txtNombre = findViewById(R.id.nombre_mascota);
-        txtRaza = findViewById(R.id.raza);
+
+
+        txtNombre = findViewById(R.id.nombre_vacuna);
+        txtRaza = findViewById(R.id.fecha_vacuna);
         txtEdad = findViewById(R.id.edad_mascota);
-        txtPeso = findViewById(R.id.peso_mascota);
+        txtPeso = findViewById(R.id.prox_vacuna);
 
         btnGuardar = findViewById(R.id.btnGuardar);
         btnModificar = findViewById(R.id.btnModificar);
@@ -96,6 +100,15 @@ public class InfMascotas extends AppCompatActivity {
     }
     private  void lista(){
         Intent intent = new Intent(this, ListaMascotas.class);
+        startActivity(intent);
+    }
+
+    public void CambiarPantallaListaVacunas(View view) {
+        Bundle extra = getIntent().getExtras();
+        id = extra.getInt("ID");
+
+        Intent intent = new Intent (this, ListaVacunas.class);
+        intent.putExtra("ID", id);
         startActivity(intent);
     }
 }
